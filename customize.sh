@@ -10,6 +10,7 @@
 sed -i 's/OpenWrt/Parker Lord/g' package/base-files/files/bin/config_generate
 
 #2. Custom settings
+git clone https://github.com/kenzok8/openwrt-packages.git package/luci-app-unblockneteasemusic
 #sed -i 's?zstd$?zstd ucl upx\n$(curdir)/upx/compile := $(curdir)/ucl/compile?g' tools/Makefile
 #sed -i 's/$(TARGET_DIR)) install/$(TARGET_DIR)) install --force-overwrite/' package/Makefile
 #sed -i 's/root:.*/root:$1$tTPCBw1t$ldzfp37h5lSpO9VXk4uUE\/:18336:0:99999:7:::/g' package/base-files/files/etc/shadow
